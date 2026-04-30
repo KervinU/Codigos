@@ -37,8 +37,6 @@ The UI was designed with a luxury editorial direction inspired by high-end retai
 
 ## Screenshots
 
-Add your screenshots inside the `screenshots/` folder and reference them like this:
-
 ![Home Page](screenshots/home.png)
 ![Cart Page](screenshots/cart.png)
 ![Login Page](screenshots/login.png)
