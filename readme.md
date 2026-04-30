@@ -1,37 +1,43 @@
 # KervinU Developer Portfolio
 
-This repository contains portfolio projects focused on practical web development, backend systems, and full-stack application building.
+Welcome to my GitHub portfolio.
 
-## Featured Project
+This repository contains personal software development projects focused on web development, backend logic, databases, and full-stack application building.
 
-### Django Luxury Store
-A Django-based e-commerce prototype with role-based access control, session cart functionality, authentication, and admin product management.
+## About Me
 
-**Highlights**
-- Public storefront for guest users
-- Login and registration system
-- Cart flow with session storage
-- Checkout requiring authentication
-- Admin-only product creation, editing, and deletion
-- Premium storefront UI inspired by luxury retail design
-
-**Project location:**  
-`Kervinproyecto1/`
+I am a junior developer and student focused on building practical software projects with Django, Python, SQL, and web technologies.
 
 ## Tech Stack
 
 - Python
 - Django
-- Bootstrap 5
+- SQL
 - HTML
 - CSS
-- SQLite
-- Pillow
+- Bootstrap
+- Git / GitHub
 
-## Purpose
+## Featured Projects
 
-This repository is used to showcase hands-on development work and portfolio-ready projects built to practice real application structure, user flows, and backend logic.
+### 1. Django Luxury Store
+Role-based e-commerce web application built with Django.
 
-## Status
+**Highlights**
+- Public storefront
+- User authentication
+- Session-based cart
+- Admin-only product management
+- Luxury-inspired UI
 
-Active and improving.
+**Folder:** `Kervinproyecto1/`
+Kervinproyecto1 is a Django-based luxury e-commerce prototype with user authentication, session-based cart functionality, and admin-only product management.
+
+
+## Repository Purpose
+
+This repository is used to showcase practical projects, technical growth, and hands-on implementation across different areas of software development.
+
+## Notes
+
+Each project may include its own README file with setup instructions, screenshots, and technical details.
