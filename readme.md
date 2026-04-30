@@ -31,7 +31,7 @@ Role-based e-commerce web application built with Django.
 - Luxury-inspired UI
 
 **Folder:** `Kervinproyecto1/`
-Kervinproyecto1 is a Django-based luxury e-commerce prototype with user authentication, session-based cart functionality, and admin-only product management.
+
 
 
 ## Repository Purpose
