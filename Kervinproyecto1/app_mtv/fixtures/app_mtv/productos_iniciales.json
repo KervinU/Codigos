@@ -1,0 +1,44 @@
+[
+  {
+    "model": "app_mtv.producto",
+    "pk": 1,
+    "fields": {
+      "nombre": "Santos Classique",
+      "descripcion": "Reloj de líneas limpias, presencia refinada y estética editorial inspirada en la alta relojería.",
+      "precio": "1299900.00",
+      "imagen": "",
+      "categoria": "reloj",
+      "stock": 4,
+      "destacado": true,
+      "disponible": true
+    }
+  },
+  {
+    "model": "app_mtv.producto",
+    "pk": 2,
+    "fields": {
+      "nombre": "Tank Héritage",
+      "descripcion": "Pieza sobria con perfil rectangular y carácter atemporal para un catálogo premium.",
+      "precio": "1599900.00",
+      "imagen": "",
+      "categoria": "edicion",
+      "stock": 2,
+      "destacado": true,
+      "disponible": true
+    }
+  },
+  {
+    "model": "app_mtv.producto",
+    "pk": 3,
+    "fields": {
+      "nombre": "Correa Atelier",
+      "descripcion": "Accesorio de acabado elegante para complementar la colección principal.",
+      "precio": "149900.00",
+      "imagen": "",
+      "categoria": "accesorio",
+      "stock": 8,
+      "destacado": false,
+      "disponible": true
+    }
+  }
+]

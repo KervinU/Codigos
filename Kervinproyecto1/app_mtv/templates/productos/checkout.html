@@ -1,0 +1,35 @@
+{% extends 'productos/base.html' %}
+{% block title %}Checkout{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    {% if compra_realizada %}
+        <div class="editorial-box text-center">
+            <h1 class="brand-serif display-5">Compra realizada</h1>
+            <p class="text-muted">Tu pedido fue registrado correctamente.</p>
+            <a href="{% url 'inicio' %}" class="btn btn-luxury">Volver a la tienda</a>
+        </div>
+    {% else %}
+        <div class="form-shell">
+            <h1 class="brand-serif display-5 mb-4">Resumen de compra</h1>
+
+            {% for item in items %}
+                <div class="d-flex justify-content-between py-2 border-bottom">
+                    <span>{{ item.producto.nombre }} x {{ item.cantidad }}</span>
+                    <span>${{ item.subtotal }}</span>
+                </div>
+            {% endfor %}
+
+            <div class="d-flex justify-content-between pt-4">
+                <strong>Total</strong>
+                <strong>${{ total }}</strong>
+            </div>
+
+            <form method="post" class="mt-4">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-luxury">Confirmar compra</button>
+            </form>
+        </div>
+    {% endif %}
+</section>
+{% endblock %}

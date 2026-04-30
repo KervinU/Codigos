@@ -1,0 +1,22 @@
+{% extends 'productos/base.html' %}
+{% block title %}Registro{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="form-shell">
+        <p class="hero-kicker">Cuenta</p>
+        <h1 class="brand-serif display-5 mb-4">Crear cuenta</h1>
+
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ next }}">
+            {{ form.as_p }}
+
+            <div class="d-flex gap-2 mt-4">
+                <button type="submit" class="btn btn-luxury">Registrarme</button>
+                <a href="{% url 'login' %}?next={{ next }}" class="btn btn-outline-luxury">Ya tengo cuenta</a>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
