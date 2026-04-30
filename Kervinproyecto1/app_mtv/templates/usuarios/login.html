@@ -1,0 +1,22 @@
+{% extends 'productos/base.html' %}
+{% block title %}Iniciar sesión{% endblock %}
+
+{% block content %}
+<section class="py-5">
+    <div class="form-shell">
+        <p class="hero-kicker">Acceso</p>
+        <h1 class="brand-serif display-5 mb-4">Iniciar sesión</h1>
+
+        <form method="post">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ next }}">
+            {{ form.as_p }}
+
+            <div class="d-flex gap-2 mt-4">
+                <button type="submit" class="btn btn-luxury">Entrar</button>
+                <a href="{% url 'registro' %}?next={{ next }}" class="btn btn-outline-luxury">Registrarse</a>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
